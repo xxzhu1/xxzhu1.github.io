@@ -1,2 +1,2 @@
 # xxzhu1.github.io
- workshop_demo
+ just a demo
