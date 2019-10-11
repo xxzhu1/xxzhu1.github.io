@@ -4,7 +4,8 @@ $(document).ready(function() {
     });
   $("button#show_h2").on('click',function(){
              $("h2").show();
-             $("h2").css("color","blue");
+             $("h2").css("color","orange");
+             $("h2").css("font-size","20px");
              $("h2").html("100+0=100; 100-0=100; 100*1=100; 100/1=100");
   });
   });  
