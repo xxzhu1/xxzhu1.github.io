@@ -9,6 +9,7 @@ $(document).ready(function() {
   });
   });  
   
+  //plus
   function compute_x_plus_y(x,y) {
     var z = 0;
     x = parseInt(x);
@@ -16,10 +17,12 @@ $(document).ready(function() {
     z = x + y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else if ( z === 99 || z === 101){
+    } else if ( z === 99 || z === 101 ){
       return ("Your answer is pretty close!")
-    } else if ( z > 500 || z < 10){
+    } else if ( z > 500 ){
       return ("You still have lots more to work on!")
+    } else if ( z < 0 ){
+      return ("The answer cannot be negative.")
     } else{
       return　("Sorry, Please try again.");
     }
@@ -33,7 +36,9 @@ $(document).ready(function() {
     x.style.color = "red";
     document.getElementById("demo").innerHTML =  z;
   }
+  //plus end
 
+  //minus
   function compute_x_minus_y(x,y) {
     var z = 0;
     x = parseInt(x);
@@ -41,10 +46,12 @@ $(document).ready(function() {
     z = x - y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else if ( z === 99 || z === 101){
+    } else if ( z === 99 || z === 101 ){
       return ("Your answer is pretty close!")
-    } else if ( z > 500 || z < 10){
+    } else if ( z > 500 ){
       return ("You still have lots more to work on!")
+    } else if ( z < 0 ){
+      return ("The answer cannot be negative.")
     } else{
       return　("Sorry, Please try again.");
     }
@@ -58,7 +65,9 @@ $(document).ready(function() {
     x.style.color = "red";
     document.getElementById("demo").innerHTML =  z;
   }
+  //minus end
 
+  //times
   function compute_x_times_y(x,y) {
     var z = 0;
     x = parseInt(x);
@@ -66,10 +75,12 @@ $(document).ready(function() {
     z = x * y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else if ( z === 99 || z === 101){
+    } else if ( z === 99 || z === 101 ){
       return ("Your answer is pretty close!")
-    } else if ( z > 500 || z < 10){
+    } else if ( z > 500 ){
       return ("You still have lots more to work on!")
+    } else if ( z < 0 ){
+      return ("The answer cannot be negative.")
     } else{
       return　("Sorry, Please try again.");
     }
@@ -83,7 +94,9 @@ $(document).ready(function() {
     x.style.color = "red";
     document.getElementById("demo").innerHTML =  z;
   }
+  //times end
 
+  //divide
   function compute_x_divide_y(x,y) {
     var z = 0;
     x = parseInt(x);
@@ -91,10 +104,14 @@ $(document).ready(function() {
     z = x / y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else if ( z === 99 || z === 101){
+    } else if ( z === 99 || z === 101 ){
       return ("Your answer is pretty close!")
-    } else {
-      return　("Sorry! Please try again!");
+    } else if ( z > 500 ){
+      return ("You still have lots more to work on!")
+    } else if ( z < 0 ){
+      return ("The answer cannot be negative.")
+    } else{
+      return　("Sorry, Please try again.");
     }
   }
   function ask_divide() {
@@ -106,3 +123,4 @@ $(document).ready(function() {
     x.style.color = "red";
     document.getElementById("demo").innerHTML =  z;
   }
+  //divide end
