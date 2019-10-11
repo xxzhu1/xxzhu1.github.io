@@ -16,18 +16,22 @@ $(document).ready(function() {
     z = x + y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else {
-      return　("Sorry! Please try again!");
+    } else if ( z === 99 || z === 101){
+      return ("Your answer is pretty close!")
+    } else if ( z > 500 || z < 10){
+      return ("You still have lots more to work on!")
+    } else{
+      return　("Sorry, Please try again.");
     }
   }
   function ask_plus() {
     var x = document.getElementById("myForm").elements[0].value;
-  var y = document.getElementById("myForm").elements[1].value;
-  var z = compute_x_plus_y(x,y);
-  var x = document.getElementById("demo");
-  x.style.fontSize = "30px";
-  x.style.color = "red";
-  document.getElementById("demo").innerHTML =  z;
+    var y = document.getElementById("myForm").elements[1].value;
+    var z = compute_x_plus_y(x,y);
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+    document.getElementById("demo").innerHTML =  z;
   }
 
   function compute_x_minus_y(x,y) {
@@ -37,18 +41,22 @@ $(document).ready(function() {
     z = x - y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else {
-      return　("Sorry! Please try again!");
+    } else if ( z === 99 || z === 101){
+      return ("Your answer is pretty close!")
+    } else if ( z > 500 || z < 10){
+      return ("You still have lots more to work on!")
+    } else{
+      return　("Sorry, Please try again.");
     }
   }
   function ask_minus() {
     var x = document.getElementById("myForm").elements[0].value;
-  var y = document.getElementById("myForm").elements[1].value;
-  var z = compute_x_minus_y(x,y);
-  var x = document.getElementById("demo");
-  x.style.fontSize = "25px";
-  x.style.color = "red";
-  document.getElementById("demo").innerHTML =  z;
+    var y = document.getElementById("myForm").elements[1].value;
+    var z = compute_x_minus_y(x,y);
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+    document.getElementById("demo").innerHTML =  z;
   }
 
   function compute_x_times_y(x,y) {
@@ -58,18 +66,22 @@ $(document).ready(function() {
     z = x * y;
     if(z === 100){
       return　("Congradulation! You are correct!");
-    } else {
-      return　("Sorry! Please try again!");
+    } else if ( z === 99 || z === 101){
+      return ("Your answer is pretty close!")
+    } else if ( z > 500 || z < 10){
+      return ("You still have lots more to work on!")
+    } else{
+      return　("Sorry, Please try again.");
     }
   }
   function ask_times() {
     var x = document.getElementById("myForm").elements[0].value;
-  var y = document.getElementById("myForm").elements[1].value;
-  var z = compute_x_times_y(x,y);
-  var x = document.getElementById("demo");
-  x.style.fontSize = "25px";
-  x.style.color = "red";
-  document.getElementById("demo").innerHTML =  z;
+    var y = document.getElementById("myForm").elements[1].value;
+    var z = compute_x_times_y(x,y);
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+    document.getElementById("demo").innerHTML =  z;
   }
 
   function compute_x_divide_y(x,y) {
@@ -79,16 +91,18 @@ $(document).ready(function() {
     z = x / y;
     if(z === 100){
       return　("Congradulation! You are correct!");
+    } else if ( z === 99 || z === 101){
+      return ("Your answer is pretty close!")
     } else {
       return　("Sorry! Please try again!");
     }
   }
   function ask_divide() {
     var x = document.getElementById("myForm").elements[0].value;
-  var y = document.getElementById("myForm").elements[1].value;
-  var z = compute_x_divide_y(x,y);
-  var x = document.getElementById("demo");
-  x.style.fontSize = "25px";
-  x.style.color = "red";
-  document.getElementById("demo").innerHTML =  z;
+    var y = document.getElementById("myForm").elements[1].value;
+    var z = compute_x_divide_y(x,y);
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+    document.getElementById("demo").innerHTML =  z;
   }

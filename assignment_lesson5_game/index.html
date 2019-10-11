@@ -12,14 +12,7 @@
 <body>
 <div class="container">
     <h1>This is a simple game.</h1>
-    <p id="demo">It lacks images&hellip;
-    <p>
-    <br>
-    <button type="button" class="btn btn-primary" onclick="ask_plus();"> x + y</button>
-    <button type="button" class="btn btn-primary" onclick="ask_minus();"> x - y</button>
-    <button type="button" class="btn btn-primary" onclick="ask_times();"> x * y</button>
-    <button type="button" class="btn btn-primary" onclick="ask_divide();"> x / y</button>
-    <h1>__ ? __= 100</h1>
+    <h1>Question: x ? y = 100</h1>
     <form id="myForm">
       <div class="form-group">
           <div class="col-xs-4">
@@ -32,14 +25,16 @@
         </div>
       </div>
   </form>
-
-  
-  <address>Made 10 October 2019<br>by Xiaoxi Zhu.</address>
-  <button type="button" class="btn btn-warning" id="show_h2">Show me</button>
-  <button type="button" class="btn btn-info" id='hide_h2'>Hide me</button>
-  <h2>Hint!!</h2>
-
-  
+  <br><br><br><br>
+  <button type="button" class="btn btn-primary" onclick="ask_plus();"> x + y</button>
+  <button type="button" class="btn btn-primary" onclick="ask_minus();"> x - y</button>
+  <button type="button" class="btn btn-primary" onclick="ask_times();"> x * y</button>
+  <button type="button" class="btn btn-primary" onclick="ask_divide();"> x / y</button>
+  <button type="button" class="btn btn-warning" id="show_h2">Hint!</button>
+  <button type="button" class="btn btn-info" id='hide_h2'>Shh...</button>
+  <h2></h2> 
+  <p id="demo">&hellip; 
+  <address>Made 10 October 2019<br>by Xiaoxi Zhu.</address>  
 </div>
 </body>
 </html>

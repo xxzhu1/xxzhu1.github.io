@@ -1,13 +1,22 @@
 body {
-    padding-left: 11em;
-    color: black;
+    color: rgb(248, 239, 239);
     background-color: #b8bef3;
     font-family: Georgia, "Times New Roman",Times, serif;
     }
 h1 {
    font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
- }
+}
 address {
-   margin-top: 15em;
+   margin-top: 3em;
    padding-top: 1em;
-   border-top: dotted }
+   border-top: solid;
+}
+#demo {
+    margin-top: 1em;
+    font-size:25px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 20em;
+    height: 1.7em;
+}
