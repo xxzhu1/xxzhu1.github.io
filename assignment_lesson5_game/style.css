@@ -1,0 +1,13 @@
+body {
+    padding-left: 11em;
+    color: black;
+    background-color: #b8bef3;
+    font-family: Georgia, "Times New Roman",Times, serif;
+    }
+h1 {
+   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+ }
+address {
+   margin-top: 15em;
+   padding-top: 1em;
+   border-top: dotted }

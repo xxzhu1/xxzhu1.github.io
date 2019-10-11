@@ -1,10 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-    <head>
-        <title>lesson5_game</title>
-        <h1>lesson5_game</h1>
-    </head>
-    <body>
-        <p>111</p>
-    </body>
+<head>
+  <title>lesson5_game</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>This is a simple game.</h1>
+    <p id="demo">It lacks images&hellip;
+    <p>
+    <br>
+    <button type="button" class="btn btn-primary" onclick="ask_plus();"> x + y</button>
+    <button type="button" class="btn btn-primary" onclick="ask_minus();"> x - y</button>
+    <button type="button" class="btn btn-primary" onclick="ask_times();"> x * y</button>
+    <button type="button" class="btn btn-primary" onclick="ask_divide();"> x / y</button>
+    <h1>__ ? __= 100</h1>
+    <form id="myForm">
+      <div class="form-group">
+          <div class="col-xs-4">
+              <label for="2nd">Enter x:</label>
+              <input type="text" class="form-control">
+          </div>
+          <div class="col-xs-4">
+            <label for="2nd">Enter y:</label>
+            <input type="text" class="form-control" name="2st_number">
+        </div>
+      </div>
+  </form>
+
+  
+  <address>Made 10 October 2019<br>by Xiaoxi Zhu.</address>
+  <button type="button" class="btn btn-warning" id="show_h2">Show me</button>
+  <button type="button" class="btn btn-info" id='hide_h2'>Hide me</button>
+  <h2>Hint!!</h2>
+
+  
+</div>
+</body>
 </html>
