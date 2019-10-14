@@ -1,8 +1,11 @@
-body {
+/* Set the background color of body to tan */
+/* On screens that are 992px or less, set the background color to white */
+/* On screens that are 600px or less, set the background color to white */
+  body {
     color: rgb(248, 239, 239);
     background-color: #b8bef3;
     font-family: Georgia, "Times New Roman",Times, serif;
-
+    margin-left: 216px;
     }
 h1 {
    font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
