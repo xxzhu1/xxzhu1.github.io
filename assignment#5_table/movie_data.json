@@ -8,7 +8,7 @@
           "director": "Chris Butler",
           "synopsis": "Mr. Link recruits explorer Sir Lionel Frost to help find his long-lost relatives in the fabled valley of Shangri-La. Along with adventurer Adelina Fortnight, this trio of explorers travel the world to help their new friend.",
           "votes": 8.688,
-          "Metascore": 68,
+          "rating": 6.7,
           "language": " English,",
           "country": " USA,"
         },
@@ -20,7 +20,7 @@
           "director": "Wes Anderson",
           "synopsis": "Set in Japan, Isle of Dogs follows a boy's odyssey in search of his lost dog.",
           "votes": 115.805,
-          "Metascore": 82,
+          "rating": 7.9,
           "language": " English, Japanese",
           "country": " Germany, USA, "
         },
@@ -32,7 +32,7 @@
           "director": "Nick Park",
           "synopsis": "Set at the dawn of time, when prehistoric creatures and woolly mammoths roamed the earth, Early Man tells the story of Dug, along with sidekick Hognob as they unite his tribe against a mighty enemy Lord Nooth and his Bronze Age City to save their home.",
           "votes": 16.761,
-          "Metascore": 68,
+          "rating": 6.1,
           "language": " English,  ",
           "country": " USA, UK, France,  "
         },
@@ -44,7 +44,7 @@
           "director": "Ira Carpelan",
           "synopsis": "Moomintroll decides to stay awake to explore the winter instead of having his winter slumber as usual. Winter is certainly totally different than he had imagined.",
           "votes": 212,
-          "Metascore": null,
+          "rating": 5.5,
           "language": " Finnish, English",
           "country": " Finland, Poland, "
         },
@@ -56,7 +56,7 @@
           "director": "Rasmus A. Sivertsen",
           "synopsis": "In the woods there lives a mouse and his friends, and they are always scared of getting eaten by the fox or other predators who can't get food in a fair way. They have to make some laws so they all can live togheter in peace.",
           "votes": 422,
-          "Metascore": null,
+          "rating": 6.9,
           "language": " Norwegian,  ",
           "country": " Norway, Netherlands, "
         },
@@ -68,7 +68,7 @@
           "director": "Claude Barras",
           "synopsis": "After losing his mother, a young boy is sent to a foster home with other orphans his age where he begins to learn the meaning of trust and true love.",
           "votes": 17.929,
-          "Metascore": 85,
+          "rating": 7.8,
           "language": " French, English",
           "country": " Switzerland, France, "
         },
@@ -80,7 +80,7 @@
           "director": "Travis Knight",
           "synopsis": "A young boy named Kubo must locate a magical suit of armour worn by his late father in order to defeat a vengeful spirit from the past.",
           "votes": 108.297,
-          "Metascore": 84,
+          "rating": 7.8,
           "language": " English,  ",
           "country": " USA, Japan, "
         },
@@ -92,7 +92,7 @@
           "director": "Mark Burton",
           "synopsis": "When Shaun decides to take the day off and have some fun, he gets a little more action than he bargained for. A mix up with the Farmer, a caravan and a very steep hill lead them all to the Big City and it's up to Shaun and the flock to return everyone safely to the green grass of home.",
           "votes": 33.725,
-          "Metascore": 81,
+          "rating": 7.3,
           "language": " None,  ",
           "country": " UK, France, USA,  "
         },
@@ -104,7 +104,7 @@
           "director": "Graham Annable",
           "synopsis": "A young orphaned boy raised by underground cave-dwelling trash collectors tries to save his friends from an evil exterminator.",
           "votes": 51.523,
-          "Metascore": 61,
+          "rating": 6.8,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -116,7 +116,7 @@
           "director": "Tim Burton",
           "synopsis": "When a boy's beloved dog passes away suddenly, he attempts to bring the animal back to life through a powerful science experiment.",
           "votes": 90.996,
-          "Metascore": 74,
+          "rating": 6.9,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -128,7 +128,7 @@
           "director": "Chris Butler",
           "synopsis": "A misunderstood boy takes on ghosts, zombies and grown-ups to save his town from a centuries-old curse.",
           "votes": 88.595,
-          "Metascore": 72,
+          "rating": 7,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -140,7 +140,7 @@
           "director": "Peter Lord",
           "synopsis": "Pirate Captain sets out on a mission to defeat his rivals Black Bellamy and Cutlass Liz for the Pirate of the year Award. The quest takes Captain and his crew from the shores of Blood Island to the foggy streets of Victorian London.",
           "votes": 42.536,
-          "Metascore": 73,
+          "rating": 6.7,
           "language": " English,  ",
           "country": " UK, USA, "
         },
@@ -152,7 +152,7 @@
           "director": "Edward McHenry",
           "synopsis": "A satirical alternative history of World War II where the Nazis seize London and England must band together to prevent a full-on invasion.",
           "votes": 1.19,
-          "Metascore": null,
+          "rating": 5.2,
           "language": " English,  ",
           "country": " UK, Spain, Belgium,  "
         },
@@ -164,7 +164,7 @@
           "director": "Jesper Møller",
           "synopsis": "Each night, like every other child in the world, Miko goes to Dreamland thanks to magic sand dispersed by the Sandman. But one night, the evil dream Habumar steals the Sand of Dreams and ",
           "votes": 105,
-          "Metascore": null,
+          "rating": 5.8,
           "language": " German,  ",
           "country": " Germany, France, "
         },
@@ -176,7 +176,7 @@
           "director": "Jirí Barta",
           "synopsis": "A teddy bear, a mechanical mouse, and a marionette join forces to save their kidnapped friend, Buttercup the doll, from the denizens of the Land of Evil.",
           "votes": 581,
-          "Metascore": 64,
+          "rating": 6.3,
           "language": " Czech, English",
           "country": " Czech Republic, Japan, France, Slovakia"
         },
@@ -188,7 +188,7 @@
           "director": "Wes Anderson",
           "synopsis": "An urbane fox cannot resist returning to his farm raiding ways and then must help his community survive the farmers' retaliation.",
           "votes": 180.428,
-          "Metascore": 83,
+          "rating": 7.8,
           "language": " English, French",
           "country": " USA, UK, "
         },
@@ -200,7 +200,7 @@
           "director": "Stéphane Aubier",
           "synopsis": "Cowboy and Indian's only wish was to come up with a brilliant idea for Mr Horse's birthday, but when their plan ends up in utter disaster, they'll need to travel the world and back to make things right again.",
           "votes": 7.098,
-          "Metascore": 70,
+          "rating": 7.5,
           "language": " French,  ",
           "country": " Belgium, Luxembourg, France,  "
         },
@@ -212,7 +212,7 @@
           "director": "Adam Elliot",
           "synopsis": "A tale of friendship between two unlikely pen pals: Mary, a lonely, eight-year-old girl living in the suburbs of Melbourne, and Max, a forty-four-year old, severely obese man living in New York.",
           "votes": 153.609,
-          "Metascore": null,
+          "rating": 8.1,
           "language": " English, Yiddish",
           "country": " Australia, "
         },
@@ -224,7 +224,7 @@
           "director": "Henry Selick",
           "synopsis": "An adventurous 11-year-old girl finds another world that is a strangely idealized version of her frustrating home, but it has sinister secrets.",
           "votes": 181.533,
-          "Metascore": 80,
+          "rating": 7.7,
           "language": " English, Russian",
           "country": " USA, "
         },
@@ -236,19 +236,19 @@
           "director": "Neil Burns",
           "synopsis": "A genius inventor's world threatens to fly apart at the seams. His son, who has electricity crackling through his veins due to an accident in his father's laboratory, discovers the truth about his father's past.",
           "votes": 190,
-          "Metascore": null,
+          "rating": 5.5,
           "language": " English, French",
           "country": " Canada, "
         },
         {
-          "movie": "$9.99",
+          "movie": "$9.99 ",
           "year": 2008,
           "runtime": "78 min",
           "category": "Animation, Drama, Fantasy",
           "director": "Tatia Rosenthal",
           "synopsis": "A stop-motion animated story about people living in a Sydney apartment complex looking for meaning in their lives.",
           "votes": 3.061,
-          "Metascore": 68,
+          "rating": 6.7,
           "language": " English,  ",
           "country": " Israel, Australia, "
         },
@@ -260,7 +260,7 @@
           "director": "Michael J. Rix",
           "synopsis": "Whilst working on the great South African novel, an unemployed writer gets caught up in the harsh realities of life in the city of Johannesburg.",
           "votes": 67,
-          "Metascore": null,
+          "rating": 7.3,
           "language": " English,  ",
           "country": " South Africa, "
         },
@@ -272,7 +272,7 @@
           "director": "Christiane Cegavske",
           "synopsis": "A handmade stop-motion fairy tale for adults that tells the tale of the struggle between the aristocratic White Mice and the rustic Creatures Who Dwell Under the Oak over the doll of their heart's desire.",
           "votes": 996,
-          "Metascore": 73,
+          "rating": 7.1,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -284,7 +284,7 @@
           "director": "John Roecker",
           "synopsis": "It is the year 3069 and the Earth has been robbed of all its natural resources, destroyed by war and ozone depletion, and is now only a barren desert. The humans who inhabit this empty ",
           "votes": 611,
-          "Metascore": null,
+          "rating": 5,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -296,7 +296,7 @@
           "director": "Roy T. Wood",
           "synopsis": "A spoof of disaster films, an asteroid is coming towards earth and Harry Bottoms is in charge of saving us all again",
           "votes": 1.182,
-          "Metascore": null,
+          "rating": 5,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -308,7 +308,7 @@
           "director": "Tim Burton",
           "synopsis": "When a shy groom practices his wedding vows in the inadvertent presence of a deceased young woman, she rises from the grave assuming he has married her.",
           "votes": 226.997,
-          "Metascore": 83,
+          "rating": 7.3,
           "language": " English,  ",
           "country": " USA, UK, "
         },
@@ -320,7 +320,7 @@
           "director": "Steve Box",
           "synopsis": "Wallace and his loyal dog, Gromit, set out to discover the mystery behind the garden sabotage that plagues their village and threatens the annual giant vegetable growing contest.",
           "votes": 117.758,
-          "Metascore": 87,
+          "rating": 7.4,
           "language": " English,  ",
           "country": " UK, USA, "
         },
@@ -332,7 +332,7 @@
           "director": "Roger Hawkins",
           "synopsis": "Three children make a daring escape from the underground city in which they are slaves of the Evil Emperor, and go in search of the fabled Sky Kingdom and the great Prince Ariel.",
           "votes": 43,
-          "Metascore": null,
+          "rating": 6.3,
           "language": " English,  ",
           "country": " Zimbabwe, "
         },
@@ -344,7 +344,7 @@
           "director": "Mark Baker",
           "synopsis": "A compilation of short animated clips on winter days in Japan",
           "votes": 387,
-          "Metascore": null,
+          "rating": 6.6,
           "language": " Japanese,  ",
           "country": " Japan, "
         },
@@ -356,7 +356,7 @@
           "director": "Per Fly",
           "synopsis": "Prop & Berta is the story of a friendship between a little stout man and a big and proud cow, who are able to talk to each other. Together they confront an ugly and evil witch who is ",
           "votes": 222,
-          "Metascore": null,
+          "rating": 5.7,
           "language": " Danish,  ",
           "country": " Denmark, "
         },
@@ -368,7 +368,7 @@
           "director": "Peter Lord",
           "synopsis": "When a cockerel apparently flies into a chicken farm, the chickens see him as an opportunity to escape their evil owners.",
           "votes": 166.671,
-          "Metascore": 88,
+          "rating": 7,
           "language": " English,  ",
           "country": " UK, USA, France,  "
         },
@@ -380,7 +380,7 @@
           "director": "Derek W. Hayes",
           "synopsis": "The story of Jesus Christ.",
           "votes": 1.277,
-          "Metascore": null,
+          "rating": 7,
           "language": " English,  ",
           "country": " Russia, UK, "
         },
@@ -392,7 +392,7 @@
           "director": "Henry Selick",
           "synopsis": "An orphan, who lives with his two cruel aunts, befriends anthropomorphic bugs who live inside a giant peach, and they embark on a journey to New York City.",
           "votes": 56.812,
-          "Metascore": null,
+          "rating": 6.7,
           "language": " English,  ",
           "country": " UK, USA, "
         },
@@ -404,7 +404,7 @@
           "director": "Art Clokey",
           "synopsis": "In this offshoot of the 1950s claymation cartoon series, the crazy Blockheads threaten to ruin Gumby's benefit concert by replacing the entire city of Clokeytown with robots.",
           "votes": 715,
-          "Metascore": null,
+          "rating": 6.3,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -416,7 +416,7 @@
           "director": "Henry Selick",
           "synopsis": "Jack Skellington, king of Halloween Town, discovers Christmas Town, but his attempts to bring Christmas to his home causes confusion.",
           "votes": 272.542,
-          "Metascore": 82,
+          "rating": 8,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -428,7 +428,7 @@
           "director": "Dave Borthwick",
           "synopsis": "A boy born the size of a small doll is kidnapped by a genetic lab and must find a way back to his father in this inventive adventure filmed using stop motion animation techniques. Tom meets",
           "votes": 1.383,
-          "Metascore": null,
+          "rating": 7.2,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -440,7 +440,7 @@
           "director": "Ideya Garanina",
           "synopsis": "A wise house cat tells a story about how humanity came to be. Long ago, helped by the Singing Magic, Man came to dominion over nature, domesticating wild animals who were once foes. And ",
           "votes": 135,
-          "Metascore": null,
+          "rating": 7,
           "language": " Russian,  ",
           "country": " Soviet Union, "
         },
@@ -452,7 +452,7 @@
           "director": "Jirí Barta",
           "synopsis": "The story of the Pied Piper of Hamelin with a twist.",
           "votes": 962,
-          "Metascore": null,
+          "rating": 7.9,
           "language": " Czech,  ",
           "country": " Czechoslovakia|West Germany, "
         },
@@ -464,7 +464,7 @@
           "director": "Will Vinton",
           "synopsis": "Tom Sawyer, Becky Thatcher and Huck Finn join Mark Twain on his airship to meet Halley's Comet.",
           "votes": 2.345,
-          "Metascore": null,
+          "rating": 7.4,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -476,7 +476,7 @@
           "director": "Ivo Caprino",
           "synopsis": "Reodor Felgen decides that he will enter a car race to defeat his former friend who has stolen his plans for a car.",
           "votes": 11.868,
-          "Metascore": null,
+          "rating": 8.5,
           "language": " Norwegian,  ",
           "country": " Norway, "
         },
@@ -488,7 +488,7 @@
           "director": "René Laloux",
           "synopsis": "On a faraway planet where blue giants rule, oppressed humanoids rebel against their machine-like leaders.",
           "votes": 21.248,
-          "Metascore": null,
+          "rating": 7.8,
           "language": " French, Czech",
           "country": " France, Czechoslovakia, "
         },
@@ -500,7 +500,7 @@
           "director": "Jules Bass",
           "synopsis": "When Dr Frankenstein decides to retire from the monster-making business, he calls an international roster of monsters to a creepy convention to elect his successor. Everyone is there ",
           "votes": 2.527,
-          "Metascore": null,
+          "rating": 6.7,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -512,7 +512,7 @@
           "director": "John Paul",
           "synopsis": "An electronic puppet version of the Humperdinck opera, adapted for children and using spoken dialogue as well as Humperdinck's music.",
           "votes": 187,
-          "Metascore": null,
+          "rating": 6.6,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -524,7 +524,7 @@
           "director": " Jirí Trnka",
           "synopsis": "Excellent stop-motion animation film from one of the best Czech filmmakers, Jir铆 Trnka. It tells the ancient story of Czechoslovakia, how it was founded by Czech, the Forefather, and a ",
           "votes": 172,
-          "Metascore": null,
+          "rating": 6.9,
           "language": " German,  ",
           "country": " Czechoslovakia, "
         },
@@ -536,7 +536,7 @@
           "director": " Jirí Trnka",
           "synopsis": "A Chinese emperor prefers the tinkling of a bejeweled mechanical bird to the song of a real nightingale. When the Emperor is near death, a nightingale's song restores his health and teaches",
           "votes": 312,
-          "Metascore": null,
+          "rating": 6.9,
           "language": " Czech,  ",
           "country": " Czechoslovakia, "
         },
@@ -548,7 +548,7 @@
           "director": "Dallas Bower",
           "synopsis": "This exceptional theatrical version of Lewis Carroll's 1865 classic features a combination of live characters and stop motion animation.",
           "votes": 698,
-          "Metascore": null,
+          "rating": 6.5,
           "language": " English,  ",
           "country": " USA, "
         },
@@ -560,7 +560,7 @@
           "director": "Claude Misonne",
           "synopsis": "",
           "votes": 98,
-          "Metascore": null,
+          "rating": 5.7,
           "language": " French,  ",
           "country": " Belgium, "
         },
@@ -572,7 +572,7 @@
           "director": "Ferdinand Diehl",
           "synopsis": "",
           "votes": 53,
-          "Metascore": null,
+          "rating": 7,
           "language": " German,  ",
           "country": " Germany, "
         },
@@ -584,7 +584,7 @@
           "director": "Irene Starewicz",
           "synopsis": "When Renard the Fox's mischievous pranks go too far, King Lion is forced to attempt to bring the trickster to justice.",
           "votes": 1.061,
-          "Metascore": null,
+          "rating": 7.8,
           "language": " French,  ",
           "country": " France, "
         }
