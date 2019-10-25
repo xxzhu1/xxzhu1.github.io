@@ -18,44 +18,44 @@ $(document).ready(function(){
     $("button#get_data").click(function() {
         var items = [];
         var i = 0;
-        var airtable_read_endpoint = "https://api.airtable.com/v0/appKIU0zkdHt3AVTL/Product?api_key=keycj6dRwXwYLEjiv";
+        var airtable_read_endpoint = "https://api.airtable.com/v0/app4f5MestpX8G4ap/stop-motion_animated_movie?api_key=keyg8xnhMApLysSt4";
         var dataSet = [];
         $.getJSON(airtable_read_endpoint, function(result) {
                $.each(result.records, function(key,value) {
                    items = [];
-                       items.push(value.fields.company);
-                       items.push(value.fields.product_code);
-                       items.push(value.fields.product_no);
-                       items.push(value.fields.geocode2);
-                       items.push(value.fields.json);
-                       items.push(value.fields.gender);
-                       items.push(value.fields.name);
+                       items.push(value.fields.movie);
+                       items.push(value.fields.year);
+                       items.push(value.fields.synopsis);
+                       items.push(value.fields.related);
+                       items.push(value.fields.studio1);
+                       items.push(value.fields.box_office);
+                       items.push(value.fields.country1);
                        dataSet.push(items);
                        console.log(items);
-                }); // end .each
+                });
                 console.log(dataSet);
 
              $('#table1').DataTable( {
                  data: dataSet,
                  retrieve: true,
                  columns: [
-                     { title: "Company",
+                     { title: "movie",
                        defaultContent:""},
-                     { title: "Product",
+                     { title: "year",
                          defaultContent:"" },
-                     { title: "Number",
+                     { title: "synopsis",
                        defaultContent:"" },
-                     { title: "Geo Code",
+                     { title: "related",
                        defaultContent:""},
-                     { title: "JSON",
+                     { title: "studio1",
                          defaultContent:""},
-                     { title: "Gender",
+                     { title: "box_office",
                        defaultContent:""},
-                     { title: "Name",
+                     { title: "country1",
                        defaultContent:""},
                  ]
              } );
-        }); // end .getJSON
+        });
      }); // end button
 
-}); // document ready
+});
