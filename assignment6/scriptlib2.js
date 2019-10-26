@@ -14,6 +14,7 @@ $(document).ready(function(){
         var $x = $("container");
         $x.empty();
     });
+    
 
     $("button#get_data").click(function() {
         var items = [];
@@ -34,6 +35,7 @@ $(document).ready(function(){
                    console.log(items);
             });
             console.log(dataSet);
+            
  
          $('#table1').DataTable( {
              data: dataSet,
@@ -55,6 +57,7 @@ $(document).ready(function(){
                    defaultContent:""},
                  ]
              } );
+             
         }); // end .getJSON
      }); // end button
 
