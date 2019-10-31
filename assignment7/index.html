@@ -1,6 +1,174 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-    <head>
-        
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="assignment7">
+    <meta name="author" content="Xiaoxi Zhu">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <!--search space-->
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet"
+        type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+    <script
+        src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #ccc;
+            color: white;
+            text-align: center;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span>Assignment7</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="..\index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="index.html">Assignment7</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h1>This is Xiaoxi's Assignment#7</h1>
+                        <a href="#chart1" class="btn btn-primary btn-large">Chart</a>
+                        <a href="#map1" class="btn btn-primary btn-large">Map</a>
+                    </div>
+                    <!--end jumbotron-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </div>
+    <div class="section" id="chart1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-warning" id="get_data2">Chart Click Here</button>
+                    <br>
+                    <div class="table-responsive">
+                        <table id="table2" width="100%" class="table table-bordered"></table>
+                    </div>
+                    <!-- table responsive -->
+                    <div id="chart"></div>
+                </div>
+                <!--col-->
+            </div>
+            <!--row-->
+        </div>
+        <!-- container -->
+    </div>
+    <!--end section-->
+    <div class="section" id="map1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-warning" id="roll_up" onclick="show_districts();">Show
+                        Districts</button>
+                    <br>
+                    <div id="map" style="width: 600px; height: 400px"></div>
+                </div>
+                <!--col-->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!--section-->
+    <script>
+        var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 20, });
+        var map = L.map('map')
+            .addLayer(mapboxTiles)
+            .setView([40.768509, -73.970011], 14);
+
+        var items = [];
+        var airtable_read_endpoint = "https://api.airtable.com/v0/app9uHF8SaAw7PDjK/map?api_key=keyg8xnhMApLysSt4";
+
+        var data = [];
+        $.getJSON(airtable_read_endpoint, function (result) {
+            $.each(result.records, function (key, value) {
+                items = {};
+                items["name"] = value.fields.Name;
+                items["url"] = value.fields.url;
+                items["image_url"] = value.fields.img_url;
+                items["latitud"] = value.fields.Lat;
+                items["longitud"] = value.fields.Lng;
+                data.push(items);
+                console.log(items);
+            }); // .each
+        }); // .getJSON
+    </script>
+    <script>
+        function show_districts() {
+
+            for (var i in data) {
+                var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+                L.marker(latlng)
+                    .bindPopup('<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url + '" width = "80px"><br>' + data[i].name + '</a>')
+                    .addTo(map);
+            }
+
+        }
+    </script>
+    <script src="script.js"></script>
+    <div class="section section-primary">
+        <div class="container">
+            <iframe class="airtable-embed"
+                src="https://airtable.com/embed/shrKZgDUKe7TvT4r6?backgroundColor=yellow&amp;viewControls=on"
+                frameborder="0" onmousewheel="" width="100%" height="533"
+                style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
+    </div>
+    <div class="container" id="footer">
+        <p>Footer</p>
+    </div>
+</body>
+
 </html>
