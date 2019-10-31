@@ -126,7 +126,7 @@
         var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 20, });
         var map = L.map('map')
             .addLayer(mapboxTiles)
-            .setView([40.768509, -73.970011], 14);
+            .setView([40.768509, -73.970010], 14);
 
         var items = [];
         var airtable_read_endpoint = "https://api.airtable.com/v0/app9uHF8SaAw7PDjK/map?api_key=keyg8xnhMApLysSt4";
@@ -158,6 +158,7 @@
         }
     </script>
     <script src="script.js"></script>
+    <br><br>
     <div class="section section-primary">
         <div class="container">
             <iframe class="airtable-embed"
