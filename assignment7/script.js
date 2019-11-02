@@ -28,7 +28,7 @@ $(document).ready(function(){
                      items.push(value.fields.amount);
                      dataSet.push(items);
                      console.log(items);
-              }); // end .each
+              });
               console.log(dataSet);
 
            $('#table2').DataTable( {
