@@ -22,11 +22,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="50em" alt="sma"><br></a>
+                    <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="35em" alt="sma"><br></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-                    <br>
-                    <ul class="lead nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="active">
                             <a href="index.html"><b>Home</b></a>
                         </li>
@@ -47,35 +46,30 @@
             </div>
         </div>
         <!--navbar-end-->
-        <div class="cover">
-            <div class="background-image-fixed cover-image" style="background-image : url('https://www.aplusc.tv/wp-content/uploads/2019/07/Model-making-Puppets-USE.jpg')"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 class="text-inverse">Do You Like Stop-motion Animation?</h1>
-                        <p class="text-inverse">For anyone who interested in Stop-motion animation&nbsp;
-                            <br>and&nbsp;would like to explore more!&nbsp;
-                            <br>Find the best stop-motion animation&nbsp;movie to watch and learn how
-                            to make it!</p>
-                        <a href="#"><i class="fa fa-5x fa-fw fa-youtube-play text-danger"></i></a>
-                        <p></p>
-                        <a class="btn btn-lg btn-primary">About</a>
+        <script type="text/javascript">
+            var nav = document.getElementById('nav');
+                    window.onscroll = function () {
+                        if (window.pageYOffset > 100) {
+                            nav.style.position = "fixed";
+                            nav.style.top = 0;
+                        } else {
+                            box.style.position = "absolute";
+                            box.style.top = 100;
+                        }
+                    }
+        </script>
+        <div class="carousel slide" id="fullcarousel-example" data-interval="false"
+        data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="source\headerstudio.jpg">
+                    <div class="carousel-caption">
+                        <h2>Title</h2>
+                        <p>Description</p>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            var nav = document.getElementById('nav');
-            window.onscroll = function () {
-                if (window.pageYOffset > 100) {
-                    nav.style.position = "fixed";
-                    nav.style.top = 0;
-                } else {
-                    box.style.position = "absolute";
-                    box.style.top = 100;
-                }
-            }
-        </script>
         <div class="section">
             <div class="container">
                 <div class="row">
