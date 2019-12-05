@@ -12,21 +12,23 @@
         <link rel="stylesheet" href="style.css">
         <style type="text/css">
             html {
-                        scroll-behavior: smooth;
-                    }
+                scroll-behavior: smooth;
+            }
+    
+            #mapid {
+                height: 100%;
+            }
         </style>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
-    </script>
-    <script>
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.google-analytics.com https://optimize.google.com https://ajax.googleapis.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' unsafe-inline' https://optimize.google.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com  'unsafe-inline'; font-src 'self' https://fonts.gstatic.com" />
-    </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     </head>
     
     <body>
@@ -49,13 +51,13 @@
                         <li>
                             <a href="movies.html"><b>Movies</b></a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="studios.html"><b>Studios</b><br></a>
                         </li>
                         <li>
                             <a href="makeyourown.html"><b>Make Your Own</b><br></a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="contacts.html"><b>Contacts</b></a>
                         </li>
                     </ul>
@@ -63,14 +65,26 @@
             </div>
         </div>
         <!--navbar-end-->
-        <div id="fullcarousel-example" data-interval="false" class="carousel slide"
-        data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="source\headercontacts.png">
-                    <div class="carousel-caption">
-                        <h1>Contacts Us</h1>
-                        <p>Any time! Any where! Feel free to contact us!</p>
+        <br>
+        <br>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png"
+                        class="img-responsive">
+                        <h1 contenteditable="true">Laika</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                            enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                            felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+                            elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+                            in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                            laoreet.</p>
                     </div>
                 </div>
             </div>
@@ -78,33 +92,11 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="jumbotron">
-                            <h2 contenteditable="true" class="text-center">Contact</h2>
-                            <br>
-                            <form role="form" class="text-left">
-                                <div class="form-group">
-                                    <label class="control-label" for="exampleInputEmail1">Name</label>
-                                    <input class="form-control" id="exampleInputEmail1" placeholder="Your Name"
-                                    type="text">
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="exampleInputEmail1">Email address</label>
-                                    <input class="form-control" id="exampleInputEmail1"
-                                    placeholder="Enter email" type="email">
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="exampleInputPassword1">Password</label>
-                                    <input class="form-control" id="exampleInputPassword1"
-                                    placeholder="Password" type="password">
-                                </div>
-                                <button type="submit" class="btn btn-default btn-lg">Submit</button>
-                            </form>
-                        </div>
-                    </div>
+                    <div class="col-md-12"></div>
                 </div>
             </div>
         </div>
+        <!--foot-start-->
         <footer class="section section-primary">
             <div class="container">
                 <div class="row">
