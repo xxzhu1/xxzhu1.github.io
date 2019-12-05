@@ -12,31 +12,29 @@
         <link rel="stylesheet" href="style.css">
         <style type="text/css">
             html {
-                scroll-behavior: smooth;
-            }
-    
-            #mapid {
-                height: 600px;
-            }
+                                scroll-behavior: smooth;
+                            }
+                    
+                            #mapid {
+                                height: 100%;
+                            }
         </style>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-    
-            gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+                            function gtag() { dataLayer.push(arguments); }
+                            gtag('js', new Date());
+                    
+                            gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!--map-->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="">
-        <!-- Make sure you put this AFTER Leaflet's CSS -->
-        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-        crossorigin=""></script>
-        <!--map script end-->
+        <!--table-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css">
+        <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
     </head>
     
     <body>
@@ -80,13 +78,16 @@
                     <img src="source\headerstudio.jpg">
                     <div class="carousel-caption">
                         <h1>Stop-motion Animation Studios</h1>
-                        <p>Description</p>
+                        <p>Every Animation Studio has their special style!&nbsp;</p>
+                        <a class="btn btn-lg btn-warning"
+                        href="#three">Most Famous</a>&nbsp;
+                        <a class="btn btn-lg btn-warning" href="#table">All Studios in one click</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--slideshow-end-->
-        <div class="section">
+        <!--header-end-->
+        <div class="section" id="three">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -110,22 +111,38 @@
                 </div>
             </div>
         </div>
-        <!--famous studio-end-->
-        <!--map start-->
-        <div class="section">
+        <!--table-->
+        <div class="section" id="table">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="mapid">
-                            <h2>This is map</h2>
-                        </div>
-                        <br>
-                        <button type="button" class="btn btn-info" id="hide_h2">Hide H2 text</button>
-                        <button type="button" class="btn btn-warning" id="show_h2">Show H2 text in blue</button>
-                    </div>
-                </div>
+                <h1 class="text-center text-primary">All Stop-motion Animation Studios</h1>
+                <h4 class="text-center text-danger text-default"
+                contenteditable="true">Feel free to visit their websites and find more!</h4>
+                <br>
+                <table id="data-table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Studio Name</th>
+                            <th>Established_time</th>
+                            <th>Country</th>
+                            <th>Website</th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                                $('#data-table').DataTable({
+                                    "ajax": "employee_data.json",
+                                    "columns": [
+                                        { "data": "Name" },
+                                        { "data": "established_time" },
+                                        { "data": "country" },
+                                        { "data": "url" }
+                                    ]
+                                });
+                            });
+        </script>
         <!--foot-start-->
         <footer class="section section-primary">
             <div class="container">

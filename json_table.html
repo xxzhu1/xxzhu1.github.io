@@ -6,52 +6,33 @@
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css"/>  
-           <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script> 
-           <style type = text/css>
-           body {background-color: #F7FFFF; color:black}           
-           </style> 
+           <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>  
       </head>  
       <body>  
            <br /><br />  
            <div class="container">  
-                <h1 align="center">Show JSON Data in Jquery Datatables</h3><br />  
-                <h3 align="center">Movie Database</h3><br />  
+                <h1>Show JSON Data in Jquery Datatables</h3><br />  
+                <h3>Employee Database</h3><br />  
                 <table id="data-table" class="table table-bordered">  
                      <thead>  
                           <tr>  
-                               <th>movie</th>  
-                               <th>year</th>  
-                               <th>runtime</th>  
-                               <th>category</th>  
-                               <th>director</th>  
-                               <th>synopsis</th>
-                               <th>votes</th>
-                               <th>rating</th>  
-                               <th>language</th>
-                               <th>country</th>    
+                               <th>Name</th>  
+                               <th>Gender</th>  
+                               <th>Designation</th>  
                           </tr>  
                      </thead>  
                 </table>  
            </div>  
-           <iframe class="airtable-embed" src="https://airtable.com/embed/shrA67TIJs8p2bBEJ?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-           <iframe class="airtable-embed" src="https://airtable.com/embed/shrKZgDUKe7TvT4r6?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
       </body>  
  </html>  
  <script>  
  $(document).ready(function(){  
       $('#data-table').DataTable({  
-           "ajax"     :     "movie_data.json",  
+           "ajax"     :     "employee_data.json",  
            "columns"     :     [  
-                {     "data"     :     "movie"     }, 
-                {     "data"     :     "year"},   
-                {     "data"     :     "runtime"},
-                {     "data"     :     "category"},  
-                {     "data"     :     "director"},  
-                {     "data"     :     "synopsis"},
-                {     "data"     :     "votes"},
-                {     "data"     :     "rating"},  
-                {     "data"     :     "language"},
-                {     "data"     :     "country"},  
+                {     "data"     :     "name"     },  
+                {     "data"     :     "gender"},  
+                {     "data"     :     "designation"}  
            ]  
       });  
  });  
