@@ -12,29 +12,35 @@
         <link rel="stylesheet" href="style.css">
         <style type="text/css">
             html {
-                                                scroll-behavior: smooth;
-                                            }
-                                    
-                                            #mapid {
-                                                height: 100%;
-                                            }
+                scroll-behavior: smooth;
+            }
+    
+            #mapid {
+                height: 180px;
+            }
         </style>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-                                            function gtag() { dataLayer.push(arguments); }
-                                            gtag('js', new Date());
-                                    
-                                            gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!--table-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css">
-        <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+        <!--map-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="">
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+        <style>
+            #mapid {
+                height: 365px;
+            }
+        </style>
     </head>
     
     <body>
@@ -77,46 +83,144 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png"
+                        <img src="https://www.waltdisneystudios.com/static/6b395631a8299ac82d40951ed796cdea/2b5f6/FeaturedMovies.jpg"
                         class="img-responsive">
-                        <h1 contenteditable="true">Disney</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-                            dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                            enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                            felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-                            elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-                            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
-                            in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-                            laoreet.</p>
+                        <h1 class="text-center">Walt Disney</h1>
+                        <h3 class="text-muted" contenteditable="true">The Walt Disney Studios is an American film studio, one of the four business
+                            segments of The Walt Disney Company. The studio, one of the "Big Five"
+                            major film studios and best known for its multi-faceted film divisions,
+                            is based at the eponymous Walt Disney Studios in Burbank, California.&nbsp;Walt
+                            Disney arrived in California in the summer of 1923 with a lot of hopes
+                            but little else. He had made a cartoon in Kansas City about a little girl
+                            in a cartoon world, called Alice’s Wonderland, and he decided that he could
+                            use it as his “pilot” film to sell a series of these “Alice Comedies” to
+                            a distributor. Soon a distributor in New York, M. J. Winkler, contracted
+                            to distribute the “Alice Comedies” on October 16, 1923, and this date became
+                            the start of the Disney company. Originally known as the Disney Brothers
+                            Cartoon Studio.&nbsp;
+                            <br>
+                            <br>The original Disney Studio&nbsp;had been in the back half of a real estate
+                            office on Kingswell Avenue in Hollywood, but soon Walt had enough money
+                            to move next door and rent a whole store for his studio. That small studio
+                            was sufficient for a couple of years, but the company eventually outgrew
+                            it and Walt had to look elsewhere. He found an ideal piece of property
+                            on Hyperion Avenue in Hollywood, built a studio, and in 1926 moved his
+                            staff to the new facility. During the war, Walt Disney concentrated on
+                            making propaganda and training films for the military. When the war ended,
+                            it was difficult for the Disney Studio to regain its pre-war footing. But
+                            Walt opened some new doors by beginning the award-winning True-Life Adventure
+                            series featuring nature photography of a style never seen before. 1950
+                            saw big successes at Disney-the first completely live-action film, Treasure
+                            Island, the return to classic animated features with Cinderella and the
+                            first Disney television show at Christmas time. In the 1960s came Audio-Animatronics®,
+                            pioneered with the Enchanted Tiki Room at Disneyland and then four shows
+                            at the 1964 New York World’s Fair, and Mary Poppins, perhaps the culmination
+                            of all Walt Disney had learned during his long movie-making career. But
+                            the ’60s also brought the end of an era: Walt Disney died December 15,
+                            1966.&nbsp;
+                            <br>
+                            <br>Roy O.&nbsp;Disney, who after Walt’s death oversaw the building and financing
+                            of Walt Disney World, died late in 1971, and for the next decade the Company
+                            was led by a team including Card Walker, Donn Tatum, and Ron Miller — all
+                            originally trained by the Disney brothers. Filmmaking hit new heights in
+                            1988 as Disney for the first time led Hollywood studios in box-office gross.
+                            Disney animation began reaching even greater audiences, with The Little
+                            Mermaid being topped by Beauty and the Beast which was in turn topped by
+                            Aladdin (1992).&nbsp;
+                            <br>
+                            <br>The Disney success with animated films continued in 1994 with The Lion
+                            King, which soon became one of the highest-grossing films of all-time.
+                            Toy Story pioneered computer-animation techniques and was followed by a
+                            successful sequel. In theaters in 2012 were John Carter, Marvel’s The Avengers,
+                            Brave, Wreck-It Ralph, Frankenweenie, and Lincoln (DreamWorks). For nine
+                            decades, The Walt Disney Company continues its mandate of providing quality
+                            animations for the whole world, not only the stop-motion animation.</h3>
+                        <p
+                        class="text-muted">#Article from Walt Disney Official Website</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--table-->
-        <script>
-            $(document).ready(function () {
-                                                $('#data-table').DataTable({
-                                                    "ajax": "employee_data.json",
-                                                    "columns": [
-                                                        { "data": "Name" },
-                                                        { "data": "established_time" },
-                                                        { "data": "country" },
-                                                        { "data": "url" }
-                                                    ]
-                                                });
-                                            });
-        </script>
-        <!--foot-start-->
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"></div>
+                    <div class="col-md-6">
+                        <img src="https://www.waltdisney.org/sites/default/files/styles/large/public/2019-06/x753-256_R.jpg,qh=278141b7,aitok=lAtwEtGt.pagespeed.ic.aBcBpAipfQ.jpg"
+                        class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-muted">The Walt Disney Studios is an American film studio, one of the four business
+                            segments of The Walt Disney Company. The studio, one of the "Big Five"
+                            major film studios and best known for its multi-faceted film divisions,
+                            is based at the eponymous WaltNew York, M. J. Winkler, contracted to distribute
+                            the “Alice Comedies” on October 16, 1923, and this date became the start
+                            of the Disney company. Originally known as the Disney Brothers Cartoon
+                            Studio.&nbsp;</h3>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--map-->
+        <div class="section section-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Walt Disney Studios</h1>
+                        <h3>The Walt Disney Studios, in Burbank, California, United States, serves
+                            as the corporate headquarters for The Walt Disney Company media conglomerate
+                            since 1940.&nbsp;</h3>
+                        <h3 contenteditable="true">
+                            <b>Address:</b>&nbsp;500 S Buena Vista St, Burbank, CA 91521&nbsp;
+                            <br>
+                            <br>
+                            <b>Hours:</b>&nbsp;Open 24 hours Every Day
+                            <br>
+                            <br>
+                            <b>Phone:</b>&nbsp;(818) 560-1000&nbsp;
+                            <br>
+                            <br>
+                            <b>Email:</b>&nbsp;hTWDS.Global.Communications@Disney.com&nbsp;;
+                            <br>
+                            <br>
+                            <b>Website:</b>&nbsp;
+                            <a href="http://www.aardman.com/">&nbsp;www.waltdisneystudios.com</a>
+                            <br>
+                            <br href="http://www.aardman.com/">
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <div id="mapid"></div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <br>
+                        <a class="btn btn-lg btn-warning" href="https://xxzhu1.github.io/xxzhu1.github.io/com5961_final/studios.html">Back To Studio</a>
+                        <a class="btn btn-lg btn-warning" href="https://xxzhu1.github.io/xxzhu1.github.io/com5961_final/index.html#three">Back To Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--map script-->
+        <script>
+            var mymap = L.map('mapid').setView([34.15667, -118.32516], 10);
+            var attribution =
+                '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
+            var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var tiles = L.tileLayer(tileUrl, { attribution });
+            tiles.addTo(mymap);
+            var marker = L.marker([34.15667, -118.32516]).addTo(mymap);
+            var popup = L.popup();
+    
+            function onMapClick(e) {
+                popup
+                    .setLatLng(e.latlng)
+                    .setContent("Walt Disney Studios at " + e.latlng.toString())
+                    .openOn(mymap);
+            }
+    
+            mymap.on('click', onMapClick);
+        </script>
+        <!--foot-start-->
         <footer class="section section-primary">
             <div class="container">
                 <div class="row">
