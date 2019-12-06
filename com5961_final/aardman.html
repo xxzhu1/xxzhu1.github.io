@@ -1,279 +1,348 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
-    <!--pingendo-ScriptCode-End-->
-    <link rel="stylesheet" href="style.css">
-    <style type="text/css">
-        html {
-            scroll-behavior: smooth;
-        }
-
-        #mapid {
-            height: 180px;
-        }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!--map-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <!--pingendo-ScriptCode-End-->
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            html {
+                scroll-behavior: smooth;
+            }
+    
+            #mapid {
+                height: 180px;
+            }
+        </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!--map-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="">
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
-    <style>
-        #mapid {
-            height: 365px;
-        }
-    </style>
-</head>
-
-<body>
-    <br>
-    <br>
-    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="35em"
-                        alt="sma"><br></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html"><b>Home</b></a>
-                    </li>
-                    <li>
-                        <a href="movies.html"><b>Movies</b></a>
-                    </li>
-                    <li class="active">
-                        <a href="studios.html"><b>Studios</b><br></a>
-                    </li>
-                    <li>
-                        <a href="makeyourown.html"><b>Make Your Own</b><br></a>
-                    </li>
-                    <li>
-                        <a href="contacts.html"><b>Contacts</b></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--navbar-end-->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <img src="https://www.aardman.com/api/banner/" class="img-responsive">
-                    <h1 class="text-center">Aardman Animations</h1>
-                    <h3 class="text-muted">The Walt Disney Studios is an American film studio, one of the four business
-                        segments of The Walt Disney Company. The studio, one of the "Big Five"
-                        major film studios and best known for its multi-faceted film divisions,
-                        is based at the eponymous Walt Disney Studios in Burbank, California.&nbsp;Walt
-                        Disney arrived in California in the summer of 1923 with a lot of hopes
-                        but little else. He had made a cartoon in Kansas City about a little girl
-                        in a cartoon world, called Alice’s Wonderland, and he decided that he could
-                        use it as his “pilot” film to sell a series of these “Alice Comedies” to
-                        a distributor. Soon a distributor in New York, M. J. Winkler, contracted
-                        to distribute the “Alice Comedies” on October 16, 1923, and this date became
-                        the start of the Disney company. Originally known as the Disney Brothers
-                        Cartoon Studio.&nbsp;
-                        <br>
-                        <br>The original Disney Studio&nbsp;had been in the back half of a real estate
-                        office on Kingswell Avenue in Hollywood, but soon Walt had enough money
-                        to move next door and rent a whole store for his studio. That small studio
-                        was sufficient for a couple of years, but the company eventually outgrew
-                        it and Walt had to look elsewhere. He found an ideal piece of property
-                        on Hyperion Avenue in Hollywood, built a studio, and in 1926 moved his
-                        staff to the new facility. During the war, Walt Disney concentrated on
-                        making propaganda and training films for the military. When the war ended,
-                        it was difficult for the Disney Studio to regain its pre-war footing. But
-                        Walt opened some new doors by beginning the award-winning True-Life Adventure
-                        series featuring nature photography of a style never seen before. 1950
-                        saw big successes at Disney-the first completely live-action film, Treasure
-                        Island, the return to classic animated features with Cinderella and the
-                        first Disney television show at Christmas time. In the 1960s came Audio-Animatronics®,
-                        pioneered with the Enchanted Tiki Room at Disneyland and then four shows
-                        at the 1964 New York World’s Fair, and Mary Poppins, perhaps the culmination
-                        of all Walt Disney had learned during his long movie-making career. But
-                        the ’60s also brought the end of an era: Walt Disney died December 15,
-                        1966.&nbsp;
-                        <br>
-                        <br>Roy O.&nbsp;Disney, who after Walt’s death oversaw the building and financing
-                        of Walt Disney World, died late in 1971, and for the next decade the Company
-                        was led by a team including Card Walker, Donn Tatum, and Ron Miller — all
-                        originally trained by the Disney brothers. Filmmaking hit new heights in
-                        1988 as Disney for the first time led Hollywood studios in box-office gross.
-                        Disney animation began reaching even greater audiences, with The Little
-                        Mermaid being topped by Beauty and the Beast which was in turn topped by
-                        Aladdin (1992).&nbsp;
-                        <br>
-                        <br>The Disney success with animated films continued in 1994 with The Lion
-                        King, which soon became one of the highest-grossing films of all-time.
-                        Toy Story pioneered computer-animation techniques and was followed by a
-                        successful sequel. In theaters in 2012 were John Carter, Marvel’s The Avengers,
-                        Brave, Wreck-It Ralph, Frankenweenie, and Lincoln (DreamWorks). For nine
-                        decades, The Walt Disney Company continues its mandate of providing quality
-                        animations for the whole world, not only the stop-motion animation.</h3>
-                    <p class="text-muted">#Article from Walt Disney Official Website</p>
+        <style>
+            #mapid {
+                height: 365px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <br>
+        <br>
+        <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="35em" alt="sma"><br></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html"><b>Home</b></a>
+                        </li>
+                        <li>
+                            <a href="movies.html"><b>Movies</b></a>
+                        </li>
+                        <li class="active">
+                            <a href="studios.html"><b>Studios</b><br></a>
+                        </li>
+                        <li>
+                            <a href="makeyourown.html"><b>Make Your Own</b><br></a>
+                        </li>
+                        <li>
+                            <a href="contacts.html"><b>Contacts</b></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png"
+        <!--navbar-end-->
+        <!--article-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets//img/banners/banner-atrium.jpg"
                         class="img-responsive">
-                </div>
-                <div class="col-md-6">
-                    <h1>A title</h1>
-                    <h3>A subtitle</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                        nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                        enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                        felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-                        elementum semper nisi.</p>
+                        <h1 class="text-center">Aardman Animations</h1>
+                        <h2 class="text-center text-danger text-default">1972</h2>
+                        <h3 class="text-muted" contenteditable="true">Aardman's adeptness of engaging audiences with compelling stories told
+                            through animation has earned the company a deserved worldwide reputation.
+                            Their award-winning work produces a unique brand of independent film alongside
+                            work for broadcast and advertising spots. The studio has had ten Oscar®
+                            nominations and has won four.
+                            <br>
+                            <br>Peter Lord and David Sproxton began their animating partnership at school.
+                            In 1972 they registered the name Aardman Animations. After graduating,
+                            they moved to Bristol in 1976 where they produced their first professional
+                            production, creating Morph for the children’s program 'Take Hart'.</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--map-->
-    <div class="section section-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Aardman Animations</h1>
-                    <h3 contenteditable="true">We create beautiful animated feature films, series, advertising and
-                        digital
-                        entertainment for audiences around the world!</h3>
-                    <h3 contenteditable="true">
-                        <b>Address:</b>&nbsp;Gas Ferry Rd, Bristol BS1 6UN, United Kingdom&nbsp;
-                        <br>
-                        <br>
-                        <b>Hours:</b>&nbsp;Mon-Fri 9:30AM-6PM / Closed at Weekend
-                        <br>
-                        <br>
-                        <b>Phone:</b>&nbsp;+44 117 984 8485&nbsp;
-                        <br>
-                        <br>
-                        <b>Email:</b>&nbsp;hello@aardman.com&nbsp;
-                        <br>
-                        <br>
-                        <b>Website:</b>&nbsp;
-                        <a href="http://www.aardman.com/">&nbsp;www.aardman.com</a>
-                        <br>
-                        <br>
-                    </h3>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/morph-feet.jpg"
+                        class="img-responsive">
+                    </div>
+                    <div class="col-md-10">
+                        <h3 class="text-muted">From the start Peter and David were interested in developing an adult
+                            audience for model animation. Conversation Pieces commissioned by Channel
+                            Four Television in 1982 enabled the pair to develop its innovative technique
+                            of animating puppet characters to real-life conversations. With films like
+                            Early Bird (set in a local radio station) Aardman demonstrated that real
+                            people could be characterised with insight, humour and sensitivity.</h3>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <br>
-                    <div id="mapid"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3 class="text-muted" contenteditable="true">Peter and David met Nick Park at the National Film and Television School
+                            when he was working on his student film A Grand Day Out. He joined Aardman
+                            full time in 1985.</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/thumb-heads.jpg"
+                        class="img-responsive">
+                    </div>
                 </div>
-                <div class="col-md-6 text-right">
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <h2 class="text-center text-danger text-default">1995</h2>
+                        <h3 class="text-muted" contenteditable="true">In 1995 Aardman produced Nick Park's third Oscar winning film A Close
+                            Shave. An immediate success, it confirmed the studio’s reputation as well
+                            as establishing Wallace and Gromit as household names. In 1996 the studio
+                            produced Peter Lord's Oscar nominated 11 minute short film, Wat's Pig (for
+                            Channel Four) as well as a children's series based on Morph, The Morph
+                            Files.</h3>
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/mouths.jpg"
+                        class="img-responsive">
+                        <h2 class="text-center text-danger text-default">2000</h2>
+                        <h3 class="text-muted">Chicken Run was Aardman’s first full-length theatrical feature film to
+                            be funded by DreamWorks. Directed by both Peter Lord and Nick Park it was
+                            released in June 2000 in the US and UK to excellent reviews and outstanding
+                            box office receipts. Chicken Run has grossed over $220M at the worldwide
+                            box office.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-center text-danger text-default">2007</h2>
+                        <h3 class="text-muted" contenteditable="true">Flushed Away, the studio's first CG film was released worldwide by DreamWorks
+                            in November 2006, it was nominated for a BAFTA in 2007.&nbsp;Aardman's
+                            television series, Shaun the Sheep debuted on BBC1 and CBBC in March 2007.
+                            Inspired by Nick Park’s 1995 Academy Award winning short film A Close Shave,
+                            the series has been sold worldwide. Also in 2007 Aardman produced a US
+                            version of Creature Comforts.</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/flushed-away.jpg"
+                        class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/woi.png"
+                        class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="text-center text-danger text-default">2010</h2>
+                        <h3 class="text-muted">In 2010 a new six part TV series - Wallace and Gromit’s World of Invention
+                            was produced and broadcast on BBC One – an accompanying website and game
+                            were developed, extending the viewer’s experience across multiple platforms
+                            and went on to win the company its first BAFTA for New Media.
+                            <br>
+                            <br>2010 also saw the launch of Shaun the Sheep spin off game Home Sheep Home,
+                            which proved a huge success and reached nearly 70 million plays within
+                            its first year and won numerous industry awards.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <h2 class="text-center text-danger text-default">2013</h2>
+                        <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history-shaunitc.png"
+                        class="img-responsive">
+                        <h3 class="text-muted" contenteditable="true">2013 saw over 80 giant Gromit sculptures decorating the streets of Bristol
+                            for 10 weeks in the Gromit Unleashed trail. This was one of the highest-profile
+                            charity arts-trails the country has ever seen.&nbsp;This unique charity
+                            initiative was replicated with Shaun in the City, where 120 giant Shaun
+                            the Sheep sculptures decorated the streets of London and Bristol in the
+                            Spring and Summer of 2015 which went on to raise over £1,000,000 for children’s
+                            hospitals throughout the UK.
+                            <br>
+                            <br>In April 2013 Aardman announced an exciting new independent filmmaking
+                            partnership with StudioCanal to create the first feature length Shaun the
+                            Sheep movie which saw a worldwide theatrical release in 2015. Following
+                            the success of their first collaboration, Aardman and StudioCanal have
+                            gone into production on a new film from Academy award-winner Nick Park,
+                            a prehistoric adventure titled Early Man which will be released in 2018.</h3>
+                    </div>
+                    <div class="col-md-12 text-left">
+                        <h3 class="text-muted" contenteditable="true">Aardman continue to develop its attractions and live events business across
+                            the world, with an ever expanding portfolio of interactive experiences,
+                            theme parks, live shows and exhibitions in development.
+                            <br>
+                            <br>In March 2015, an exhibition celebrating the art of Aardman opened at
+                            Art Ludique in Paris ahead, of the company celebrating its 40th anniversary
+                            in 2016.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--map-->
+        <div class="section section-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Aardman Animations</h1>
+                        <h3 contenteditable="true">In July 2016 we opened our doors for a 360 Google tour of our Bristol
+                            HQ at Gas Ferry Road. The tour lets you take a look around our wonderful
+                            building, featuring some of our departments, colourful reception area and
+                            in-house studio.&nbsp;</h3>
+                        <h3 contenteditable="true">
+                            <b>Address:</b>&nbsp;Gas Ferry Rd, Bristol BS1 6UN, United Kingdom&nbsp;
+                            <br>
+                            <br>
+                            <b>Hours:</b>&nbsp;Mon-Fri 9:30AM-6PM / Closed at Weekend
+                            <br>
+                            <br>
+                            <b>Phone:</b>&nbsp;+44 117 984 8485&nbsp;
+                            <br>
+                            <br>
+                            <b>Email:</b>&nbsp;hello@aardman.com&nbsp;</h3>
+                        <p></p>
+                        <h3>
+                            <b>Website:</b>&nbsp;
+                            <a href="http://www.aardman.com/">&nbsp;www.aardman.com</a>
+                        </h3>
+                        <p></p>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <div id="mapid"></div>
+                    </div>
+                    <div class="col-md-6 text-right">
                         <br>
                         <a class="btn btn-lg btn-warning" href="https://xxzhu1.github.io/xxzhu1.github.io/com5961_final/studios.html">Back To Studio</a>
                         <a class="btn btn-lg btn-warning" href="https://xxzhu1.github.io/xxzhu1.github.io/com5961_final/index.html#three">Back To Home</a>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!--map script-->
-    <script>
-        var mymap = L.map('mapid').setView([51.44769, -2.60767], 10);
-        var attribution =
-            '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
-        var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-        var tiles = L.tileLayer(tileUrl, { attribution });
-        tiles.addTo(mymap);
-        var marker = L.marker([51.44769, -2.60767]).addTo(mymap);
-        var popup = L.popup();
-
-        function onMapClick(e) {
-            popup
-                .setLatLng(e.latlng)
-                .setContent("Walt Disney Studios at " + e.latlng.toString())
-                .openOn(mymap);
-        }
-
-        mymap.on('click', onMapClick);
-    </script>
-    <!--foot-start-->
-    <footer class="section section-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <h1>
-                        <img src="source/foot-img.png" height="45em" alt="sma">
-                    </h1>
-                    <p>The Stop-motion Animation website is designed to serve the Stop-motion
-                        Animation amateurs around the world and to engage more people watch Stop-motion
-                        Animation movie!</p>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <p class="text-info text-right">
-                        <br>
-                        <br>
-                    </p>
-                    <div class="row">
-                        <div class="col-md-12 hidden-xs text-center">
-                            <div class="col-xs-3 text-center">
-                                <a href="index.html">
+        <!--map script-->
+        <script>
+            var mymap = L.map('mapid').setView([51.44769, -2.60767], 10);
+            var attribution =
+                '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
+            var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var tiles = L.tileLayer(tileUrl, { attribution });
+            tiles.addTo(mymap);
+            var marker = L.marker([51.44769, -2.60767]).addTo(mymap);
+            var popup = L.popup();
+    
+            function onMapClick(e) {
+                popup
+                    .setLatLng(e.latlng)
+                    .setContent("Aardman Animations Studio at " + e.latlng.toString())
+                    .openOn(mymap);
+            }
+    
+            mymap.on('click', onMapClick);
+        </script>
+        <!--foot-start-->
+        <footer class="section section-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <h1>
+                            <img src="source/foot-img.png" height="45em" alt="sma">
+                        </h1>
+                        <p>The Stop-motion Animation website is designed to serve the Stop-motion
+                            Animation amateurs around the world and to engage more people watch Stop-motion
+                            Animation movie!</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <p class="text-info text-right">
+                            <br>
+                            <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-center">
+                                <div class="col-xs-3 text-center">
+                                    <a href="index.html">
                                     <i class="fa fa-4x fa-fw fa-instagram text-inverse"></i></a>
-                            </div>
-                            <div class="col-xs-3 text-center">
-                                <a href="index.html">
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    <a href="index.html">
                                     <i class="fa fa-4x fa-fw fa-github text-inverse"></i></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a href="index.html">
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="index.html">
                                     <i class="fa fa-4x fa-facebook fa-fw text-inverse"></i></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a href="index.html">
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="index.html">
                                     <i class="fa fa-4x fa-fw fa-twitter text-inverse"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <h2>DECLARATION</h2>
+                        <p contenteditable="true">This is a student project by Xiaoxi Zhu for the course COM5961 of the
+                            New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h2>DECLARATION</h2>
-                    <p contenteditable="true">This is a student project by Xiaoxi Zhu for the course COM5961 of the
-                        New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">© Copyright Xiaoxi's Website 2019</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center">© Copyright Xiaoxi's Website 2019</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>
