@@ -1,4 +1,310 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <!--pingendo-ScriptCode-End-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mapid {
+            height: 180px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <style>
+        #mapid {
+            height: 365px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="35em"
+                        alt="sma"><br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"><b>Home</b></a>
+                    </li>
+                    <li>
+                        <a href="movies.html"><b>Movies</b></a>
+                    </li>
+                    <li class="active">
+                        <a href="studios.html"><b>Studios</b><br></a>
+                    </li>
+                    <li>
+                        <a href="makeyourown.html"><b>Make Your Own</b><br></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html"><b>Contacts</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--navbar-end-->
+    <!--article-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="https://www.waltdisneystudios.com/static/6b395631a8299ac82d40951ed796cdea/2b5f6/FeaturedMovies.jpg"
+                        class="img-responsive">
+                    <h1 class="text-center">Laika Studios</h1>
+                    <h2 class="text-danger text-default text-left">At the beginning</h2>
+                    <h3 class="text-muted" contenteditable="true">Laika’s history dates to 1976, when Oscar-winning
+                        animator Will Vinton
+                        opened Will Vinton Studios. The Portland studio had intermittent success,
+                        including the famous California Raisins “I Heard It Through the Grapevine”
+                        ad campaign.
+                        <br>
+                        <br>The studio was struggling by 1998 when Nike co-founder Phil Knight made
+                        his first investment in it and his son, Travis Knight, joined the company
+                        as a junior animator. In 2003, Knight acquired the rest of the studio and
+                        forced Vinton out. In 2005, he renamed it Laika. Here’s a timeline of its
+                        film history.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-danger text-default text-left">2009</h2>
+                    <h3 class="text-muted">Laika releases its first film, "Coraline," directed by veteran Hollywood
+                        animator Henry Selick. It premieres in downtown Portland with searchlights
+                        and cast members including Teri Hatcher of "Desperate Housewives" fame.
+                        The film wins strong reviews and an Oscar nomination for best animated
+                        feature. It performed surprisingly well at the box office, too, grossing
+                        $125 million worldwide.
+                        <br>
+                        <br>Laika scraps plans for a computer-animated feature and lays off 63. The
+                        studio chooses instead to focus on its signature stop-motion animation.</h3>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <br>
+                    <img src="https://www.oregonlive.com/resizer/XVdXCC3dtH-SUZgt2x8fI1comSk=/700x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/business_impact/photo/23584249-standard.jpg"
+                        class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://www.oregonlive.com/resizer/l0ZB2c01200914pzpapVXzWgkrs=/700x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/business_impact/photo/23584462-standard.jpg"
+                        class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-danger text-default text-left">2012</h2>
+                    <h3 class="text-muted">Laika releases "ParaNorman," its second feature and first release aimed
+                        at the summer box-office crowd. The film's worldwide gross was $107 million,
+                        down from "Coraline," but it earned an Oscar nomination.</h3>
+                    <h2 class="text-danger text-default text-left">2014</h2>
+                    <h3 class="text-muted">“The Boxtrolls,” Laika’s third feature, opens. It, too, earns an Oscar
+                        nomination and grosses $109 million worldwide.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-danger text-default text-left">2016</h2>
+                    <h3 class="text-muted" contenteditable="true">Laika wins a technical award from the Oscars for 3-D
+                        printing technology
+                        that gives its characters more lifelike expression. The same year, “Kubo
+                        and the Two Strings” opens. It grosses $70 million and nets two Oscar nominations,
+                        for best animated feature and for visual effects.</h3>
+                    <h2 class="text-danger text-default text-left">2019</h2>
+                    <h3 class="text-muted" contenteditable="true">Laika's fifth film is "Missing Link". Hugh Jackman,
+                        Zoe Saldana, and Zach
+                        Galifianakis star in our most ambitious film to date - a rip-roaring, globetrotting
+                        comedy adventure.
+                        <br>
+                        <br>#Article from "Laika's history -- Will Vinton to 'Kubo'" By Mike Rogoway
+                        | The Oregonian</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Famous Works</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a><img src="source\studios\works\Nightmare-Before-Christmas2.jpg"
+                            class="img-circle img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-left">The Nightmare Before Christmas
+                        <br>1993</h1>
+                </div>
+                <div class="col-md-2">
+                    <a href="#"><img src="source\studios\works\frankenweenie.jpg" class="img-circle img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-left">Frankenweenie&nbsp;
+                        <br>2012</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map-->
+    <div class="section section-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Disney Studios</h1>
+                    <h3>Located in Burbank, California, Walt Disney Animation Studios brings imagination to life through
+                        traditional and computer animated films. Our crew is filled with diverse talent from all around
+                        the globe whose passion is to create beautiful and timeless films through the art of
+                        storytelling, the magic of animation and the science of cutting edge technology.</h3>
+                    <h3 contenteditable="true">
+                        <b>Address:</b>&nbsp;500 S Buena Vista St, Burbank, CA&nbsp;
+                        <br>
+                        <br>
+                        <b>Hours:</b>&nbsp;Open 24 hours
+                        <br>
+                        <br>
+                        <b>Phone:</b>&nbsp;(818) 560-1000&nbsp;
+                    <h3>
+                        <b>Website:</b>&nbsp;
+                        <a href="https://www.waltdisneystudios.com/">&nbsp;www.waltdisneystudios.com</a>
+                    </h3>
+                    <p></p>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <div id="mapid"></div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <br>
+                    <a class="btn btn-lg btn-warning"
+                        href="https://xxzhu1.github.io/xxzhu1.github.io/com5961_final/studios.html">Back</a>
+                    <a class="btn btn-lg btn-warning"
+                        href="https://xxzhu1.github.io/xxzhu1.github.io/com5961_final/index.html#three">Back To Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map script-->
+    <script>
+        var mymap = L.map('mapid').setView([45.55070, -122.90412], 10);
+        var attribution =
+            '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
+        var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        var tiles = L.tileLayer(tileUrl, { attribution });
+        tiles.addTo(mymap);
+        var marker = L.marker([45.55070, -122.90412]).addTo(mymap);
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("Laika Studio at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+    </script>
+    <!--foot-start-->
+    <footer class="section section-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h1>
+                        <img src="source/foot-img.png" height="45em" alt="sma">
+                    </h1>
+                    <p>The Stop-motion Animation website is designed to serve the Stop-motion
+                        Animation amateurs around the world and to engage more people watch Stop-motion
+                        Animation movie!</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <p class="text-info text-right">
+                        <br>
+                        <br>
+                    </p>
+                    <div class="row">
+                        <div class="col-md-12 hidden-xs text-center">
+                            <div class="col-xs-3 text-center">
+                                <a href="index.html">
+                                    <i class="fa fa-4x fa-fw fa-instagram text-inverse"></i></a>
+                            </div>
+                            <div class="col-xs-3 text-center">
+                                <a href="index.html">
+                                    <i class="fa fa-4x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="index.html">
+                                    <i class="fa fa-4x fa-facebook fa-fw text-inverse"></i></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="index.html">
+                                    <i class="fa fa-4x fa-fw fa-twitter text-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>DECLARATION</h2>
+                    <p contenteditable="true">This is a student project by Xiaoxi Zhu for the course COM5961 of the
+                        New Media Programme of the School of Journalism and Communication, CUHK.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">© Copyright Xiaoxi's Website 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
