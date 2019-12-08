@@ -1,0 +1,35 @@
+.text-primary {
+    color: #222222;
+}
+a.text-primary:hover {
+  color: #080808;
+}
+.bg-primary {
+    color: #fff;
+    background-color: #222222;
+  }
+  a.bg-primary:hover {
+    background-color: #080808;
+  }
+  .section-primary {
+    background-color: #000000 !important;
+    color: #ffffff;
+  }
+  .section-primary .background-image {
+    opacity: 0.5;
+  }
+  .btn-primary {
+    color: #ffffff;
+    background-color: #222222;
+    border-color: #151515;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary.focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open > .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+  }
