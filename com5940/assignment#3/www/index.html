@@ -17,7 +17,7 @@
         function modal_handle(name, org_desc, image) {
             $("h4.modal-title").html(`${name}`);
             $(".modal-body").html(`<img src="${image}"
-                                                                                                                                                                                                                 class="img-responsive"><p>${org_desc}</p>`);
+                                                                                                                                                                                                                 class="img-responsive"><p>${desc}</p>`);
             $('#popup-photo').modal('show');
         } // end modal_handle function
 
@@ -66,9 +66,9 @@
             </div>
         </div>
     </div>
-        <div id="album">
-            <div class="container" id="album_items"></div>
-        </div>
+    <div id="album">
+        <div class="container" id="album_items"></div>
+    </div>
     <div class="modal fade" id="popup-photo">
         <div class="modal-dialog">
             <div class="modal-content">
