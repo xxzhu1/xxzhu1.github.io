@@ -97,10 +97,10 @@
                          <form role="form" method="post" action="/add_movie">
                               <div class="form-group">
                                   <div class="col-sm-4">
-                                      <label for="movie">Movie</label>
+                                    <label for="movie">Movie</label>
                                   </div>
                                   <div class="col-sm-8">
-                                      <input type="text" name="movie" id="add_movie" class="form-control" placeholder="Movie Name" required>
+                                    <input type="text" name="product_code" id="add_product_code" class="form-control" placeholder="Movie Name" required autofocus>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -167,7 +167,7 @@
                                       <label for="movie">Movie</label>
                                   </div>
                                   <div class="col-sm-8">
-                                      <input type="text" name="product_id" id="upd_product_id" class="form-control" placeholder="Movie Name" disabled>
+                                      <input type="text" name="movie" id="upd_movie" class="form-control" placeholder="Movie Name" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -175,7 +175,7 @@
                                     <label for="year">Year</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="number" name="product_code" id="upd_product_code" class="form-control" placeholder="Year" disabled>
+                                    <input type="number" name="year" id="upd_year" class="form-control" placeholder="Year" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -183,7 +183,7 @@
                                     <label for="runtime">Runtime</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="text" name="name" id="upd_name" class="form-control" placeholder="0 min" disabled>
+                                    <input type="text" name="runtime" id="upd_runtime" class="form-control" placeholder="0 min" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -191,7 +191,7 @@
                                     <label for="category1">Category</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="text" name="quantity" id="upd_quantity" class="form-control" placeholder="categories" disabled>
+                                    <input type="text" name="quantity" id="upd_category1" class="form-control" placeholder="categories" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -199,7 +199,7 @@
                                     <label for="rate">Rate</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="number" name="price" id="upd_price" class="form-control" placeholder="1.0" step="0.1" min="0" max="10" required>
+                                    <input type="number" name="category1" id="upd_price" class="form-control" placeholder="1.0" step="0.1" min="0" max="10" required>
                                   </div>
                               </div>
                              <input type="hidden" name="record_id" id="upd_record_id" class="form-control"-->
@@ -231,7 +231,7 @@
                                       <label for="movie">Movie</label>
                                   </div>
                                   <div class="col-sm-8">
-                                      <input type="text" name="product_id" id="del_product_id" class="form-control" placeholder="Movie Name" disabled>
+                                      <input type="text" name="movie" id="del_movie" class="form-control" placeholder="Movie Name" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -239,7 +239,7 @@
                                     <label for="year">Year</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="number" name="product_code" id="del_product_code" class="form-control" placeholder="Year" disabled>
+                                    <input type="number" name="year" id="del_year" class="form-control" placeholder="Year" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -247,7 +247,7 @@
                                     <label for="runtime">Runtime</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="text" name="name" id="del_name" class="form-control" placeholder="0 min" disabled>
+                                    <input type="text" name="runtime" id="del_runtime" class="form-control" placeholder="0 min" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -255,7 +255,7 @@
                                     <label for="category1">Category</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="text" name="quantity" id="del_quantity" class="form-control" placeholder="categories" disabled>
+                                    <input type="text" name="category" id="del_category" class="form-control" placeholder="categories" disabled>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -263,7 +263,7 @@
                                     <label for="rate">Rate</label>
                                   </div>
                                   <div class="col-sm-8">
-                                    <input type="number" name="price" id="del_price" class="form-control" placeholder="1.0" step="0.1" min="0" max="10" disabled>
+                                    <input type="number" name="rate" id="del_rate" class="form-control" placeholder="1.0" step="0.1" min="0" max="10" disabled>
                                   </div>
                               </div>
                           <input type="hidden" name="record_id" id="del_record_id" class="form-control">
